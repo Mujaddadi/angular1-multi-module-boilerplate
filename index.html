@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular 1 Boilerplate for Big apps</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="bower_components/angular/angular.min.js"></script>
+         <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+        <script src="app.js">  </script>
+
+        <script src="module1/module1.js">  </script>
+        <script src="module1/feature1-component/feature.controller.js"></script>
+        <script src="module1/feature2-component/feature2.controller.js"></script>
+
+
+        <script src="module2/module2.js">    </script>
+        <script src="module2/feature1-component/feature.controller.js"></script>
+        
+    </head>
+
+
+    <body ng-app="domacare" ng-controller="test">
+
+        <header> This is header </header>
+        <nav>
+             <a href="#/">home</a>    
+             <a href="#/module1">Module 1</a> 
+             <a href="#/module2">Module 2</a> 
+
+        </nav>
+
+
+        <ui-view></ui-view>
+
+        <footer> This is page foorter      </footer>
+    </body>
+</html>
